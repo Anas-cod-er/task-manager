@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import { store } from './app/store.ts';
 import Route from './app/Route.tsx';
 import Home from './components/home/Home.tsx';
+import Sidebar from './layout/sidebar/Sidebar.tsx';
 
 
 
@@ -19,7 +20,8 @@ const router = createBrowserRouter([
         Component: Home,
       },
       {
-
+        path: "/sidebar",
+        Component: Sidebar,
       },
     ]
   }
