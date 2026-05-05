@@ -19,16 +19,19 @@ const AddTaskForm = () => {
         setTitle("");
     }
     return (
-        <form onSubmit={handleSubmit}>
-            <input 
-            type="text"
-            className="input input-bordered w-100px"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-            placeholder='Enter task'
-            />
-            <button className="btn btn-primary">Add</button>
-        </form>
+
+        <div>
+            <form onSubmit={handleSubmit}>
+                <input 
+                    type="text"
+                    className="input input-bordered w-100px"
+                    value={title}
+                    onChange={(e) => setTitle(e.target.value)}
+                    placeholder='Enter task'
+                    />
+                <button className="btn btn-primary">Add</button>
+            </form>
+        </div>
     );
 };
 

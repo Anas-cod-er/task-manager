@@ -1,16 +1,27 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.tsx'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './app/store.ts';
+import Route from './app/Route.tsx';
+import Home from './components/home/Home.tsx';
+
 
 
 const router = createBrowserRouter([
   {
     path:"/",
-    Component: App,
+    Component:Route ,
+    children:[
+      {
+        index: true,
+        Component: Home,
+      },
+      {
+
+      },
+    ]
   }
 ])
 
