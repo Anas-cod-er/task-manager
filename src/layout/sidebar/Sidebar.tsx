@@ -4,11 +4,14 @@ const Sidebar = () => {
   return (
     <div>
       <div className="flex flex-col bg-neutral-950 shadow-sm h-170 w-50">
-        <div className="justify-start">
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+        <div className="justify-start mt-6">
+          <div className="ml-5">
+            <span>TaskFLow</span>
+            <div>MANAGMENT</div>
+          </div>
         </div>
         <div className="flex">
-          <ul className="menu menu-horizontal px-1 flex-col">
+          <ul className="menu menu-horizontal mt-20 px-1 flex-col">
             <li>
               <a>Inbox</a>
             </li>
