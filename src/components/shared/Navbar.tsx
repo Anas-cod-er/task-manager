@@ -3,8 +3,8 @@ import { FaSearch } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <div className="flex">
-      <div className="navbar bg-neutral-950 shadow-sm w-313 fixed top-0 right-[0px]">
+    <div className="flex ">
+      <div className="navbar flex bg-neutral-950 shadow-sm top-0 right-[0px]">
         <div className="flex flex-row justify-between gap-2 w-full m-4">
           <div className="flex flex-row p-2 gap-3 bg-slate-900 rounded-lg items-center text-gray-400">
             <FaSearch />
