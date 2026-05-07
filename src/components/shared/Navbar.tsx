@@ -1,5 +1,7 @@
 import React from "react";
+import { CiSettings } from "react-icons/ci";
 import { FaSearch } from "react-icons/fa";
+import { IoIosNotifications } from "react-icons/io";
 
 const Navbar = () => {
   return (
@@ -15,6 +17,14 @@ const Navbar = () => {
             />
           </div>
 
+          <div className="flex gap-2 ml-180 items-center text-3xl">
+            <div>
+              <IoIosNotifications />
+            </div>
+            <div>
+              <CiSettings />
+            </div>
+          </div>
           <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
